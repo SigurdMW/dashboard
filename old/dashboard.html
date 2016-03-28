@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>PTPortal</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+	<!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/material-kit.css" rel="stylesheet"/>
+
+  <!-- Custom  CSS -->
+  
+  <style>
+    html, 
+    body {
+      min-height: 100%;
+      height:100%;
+    }
+    
+    body > .row {
+      height:100%;
+    }
+    
+    body > .row > .leftmenu__bg {
+      height:100%;
+    }
+    
+    body > .row > .col-md-9 {
+      height:100%;
+    }
+    
+    
+    body {
+      background-color:#f7f7f7;
+      overflow-x:hidden;
+    }
+    
+    .profile-thumbnail{
+      border-radius:50%;
+      margin-right:.5em;
+      margin-bottom: -11px;
+      margin-top: -10px;
+    }
+    
+    .navbar {
+      border-radius: 0;
+      /*box-shadow: 0 1px 1px rgba(0,0,0,1);*/
+      display:flex;
+      height: 64px;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding: 0 .75em 0 0;
+      align-items: center;
+      justify-content: center;
+      -webkit-justify-content: center;
+    }
+    
+    .navbar__brand {
+      /*flex-grow: 99;
+      -webkit-flex-grow: 99;*/
+      padding:0 1em;
+      font-size:2em;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+    } 
+    .navbar__brand a {
+      color:#fff;
+    }
+    
+    .navbar__mainlinks {
+      display: block;
+      flex-grow: 1;
+      -webkit-flex-grow: 1;
+      -webkit-box-ordinal-group: 2;
+      -moz-box-ordinal-group: 2;
+      /*-ms-flex-order: 2;
+      -webkit-order: 2;
+      order: 2;*/
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    
+    .navbar__profile {
+      -webkit-flex-grow: 0;
+      flex-grow: 0;
+    }
+    
+    .navbar__profile .dropdown-menu {
+      right: 0; 
+      left: auto;
+    }
+    
+    .nav > li.dropdown {
+      display: inline; /* override media queries */
+      position: relative;
+    }
+    
+    .nav > li.dropdown > a {
+      display: inline;  /* override media queries */
+    }
+    
+    .navbar .navbar-nav > li.open > .dropdown-menu {
+      margin-top:21px;
+    }
+    
+    
+    /* Contridict standard behavior */
+    
+    .navbar-nav .open .dropdown-menu {
+      position: absolute;
+      float: left;
+      width: auto;
+      margin-top: 21px;
+      background-color: white;
+      border: 0;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+      color:#333;
+  }
+    
+  .left-nav {
+    padding:1em 0;
+  }
+
+  .left-nav .panel-title {
+    padding:1em 32px;
+  }
+    
+  .left-nav > ul {
+    list-style-type: none;
+    padding:0;
+    border-top:1px solid #ededed;
+  }
+    
+  .left-nav > ul > li {}
+
+  .left-nav > ul > li > a {
+    display: block;
+    padding:1em 1em 1em 2em;
+  }
+
+  .left-nav > ul > li > a:hover,
+  .left-nav > ul > li > a:active
+  {
+    text-decoration: none;
+  }
+    
+  .left-nav > ul > li > a:hover {
+    background-color: #9c27b0;
+    color:#fff;
+  }
+    
+  .left-nav > ul > li > a.active {
+    background-color:#9c27b0;
+    color:#fff;
+    font-weight: bold;
+  }
+    
+  .leftmenu__bg {
+    background-color: #A0A3A6;
+  }
+  </style>
+  
+  <!-- End Custom  CSS -->
+  
+  
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-md-2 leftmenu__bg">
+      <div class=""></div>
+      <ul>
+        <li>
+          <a href="#">Dashboard</a>
+        </li>
+        <li>
+          <a href="#">Dashboard</a>
+        </li>
+        <li>
+          <a href="#">Dashboard</a>
+        </li>
+        <li>
+          <a href="#">Dashboard</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-10">
+      
+      <!-- Navbar -->
+      <nav class="navbar navbar-info">
+        <div class="navbar__brand">
+          <a href="#">PTP<span class="hidden-xs">ortal</span></a>
+        </div>
+        <div class="navbar__mainlinks">
+          <ul class="nav navbar-nav">
+
+            <!-- Customer -->
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                Kunder <b class="caret"></b><div class="ripple-container"></div></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Ny kunde</a></li>
+                <li><a href="#">Oversikt</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Søk</a></li>
+              </ul>
+            </li>
+
+            <!-- End Customer -->
+
+            <!-- Program -->
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                Programmer <b class="caret"></b><div class="ripple-container"></div></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Nytt program</a></li>
+                <li><a href="#">Programmer</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Søk</a></li>
+              </ul>
+            </li>
+
+            <!-- End Program -->
+
+          </ul>
+        </div>
+        <div class="navbar__profile">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                <img src="http://placehold.it/30x30" class="profile-thumbnail"><span class="hidden-xs">Anders</span> <b class="caret"></b><div class="ripple-container"></div></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Billing</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Log out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        </nav>
+      <!-- End Navbar -->
+      
+    </div>
+  </div>
+
+</body>
+	<!--   Core JS Files   -->
+	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/material.min.js"></script>
+
+	<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+	<script src="assets/js/nouislider.min.js" type="text/javascript"></script>
+
+	<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
+	<!--<script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>-->
+
+	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+	<script src="assets/js/material-kit.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+
+		$().ready(function(){
+			// the body of this function is in assets/material-kit.js
+			materialKit.initSliders();
+			$(window).on('scroll', materialKit.checkScrollForTransparentNavbar);
+
+            window_width = $(window).width();
+
+            if (window_width >= 768){
+                big_image = $('.wrapper > .header');
+
+				$(window).on('scroll', materialKitDemo.checkScrollForParallax);
+			}
+
+		});
+	</script>
+</html>
